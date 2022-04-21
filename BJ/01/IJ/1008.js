@@ -3,11 +3,13 @@
 //첫째 줄에 A+B를 출력한다.
 
 // const input = readFileSync("/dev/stdin").toString().split(" ").map(Number);
-const input = [1, 2];
-
-const a = input[0];
-const b = input[1];
-console.log("solution 01 : ", a + b);
-
-let answer = input.reduce((a, b) => a + b);
-console.log("solution 02 : ", answer);
+const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let answer = input.reduce((a, b) => a / b);
+let answer2 = 0;
+input.forEach((element) => {
+  answer2 += element;
+  //   answer2 = answer2 + element;
+});
+// a++;
+// a += b;
+console.log(answer2);
